@@ -1,4 +1,28 @@
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/123.png">
+		<script>
+		var title = "CYX's blog";
+		var ty = 1;
+		function upt_title() {
+			if (ty == 1) {
+				document.title = title;
+			}
+		}
+		window.onfocus = function () {
+			ty = 1;
+			document.title = '你 被 骗 了';
+			var t = setTimeout("upt_title()", 1000);
+		};
+		window.onblur = function () {
+			ty = 0;
+			document.title = '吾王HIM在此，快回来膜拜！！！';
+		};
+	</script>
+	</head>
 	<body>
 		<div>
 			Hello!
