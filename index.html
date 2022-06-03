@@ -3,17 +3,6 @@
     <head>
 		<meta charset="utf-16">
 	    <meta http-equiv="refresh" content="30">
-	    <script type="text/javascript">
-function setsubmit()
-{
-if(mylink.value == 0)
-window.location.href='http://www.shop.2b2t.com';
-if(mylink.value == 1)
-window.location.href='http://www.baidu.com';
-if(mylink.value == 2)
-window.location.href='http://www.bing.com';
-}
-</script>
 		<script>
 			var title="Main page | CharlieGao2009 and Adam1119's net";
 			var cnt=1;
@@ -48,13 +37,13 @@ window.location.href='http://www.bing.com';
 		}
 	</style>
     <body>
-	    <h2 style="background-color:#7FFF00";>菜单<select>
+	    <h2 style="background-color:#7FFF00";>菜单<select name="pageselect" οnchange="self.location.href=options[selectedIndex].value" >
 
-		    <option value ="0">2B2T</option>
+		    <option value ="https://wwww.shop.2b2t.org">2B2T</option>
 
-		    <option value ="1">百度</option>
+		    <option value ="https://wwww.baidu.com">百度</option>
 
-		    <option value="2">必应</option>
+		    <option value="https://wwww.bing.com">必应</option>
 
 </select></h2>
 		<img src="assets/img/title.png">
