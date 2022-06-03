@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
 		<meta charset="utf-16">
 	    <meta http-equiv="refresh" content="30">
 		<script>
@@ -37,7 +38,20 @@
 		}
 	</style>
     <body>
-	    <h2 style="background-color:#7FFF00";>菜单<select name="pageselect" οnchange="self.location.href=options[selectedIndex].value" >
+	    <SCRIPT language=javascript> 
+    <!-- 
+    // open the related site windows 
+    function mbar(sobj) { 
+    var docurl =sobj.options[sobj.selectedIndex].value; 
+        if (docurl != "") { 
+            open(docurl,'_blank'); 
+            sobj.selectedIndex=0; 
+            sobj.blur(); 
+        } 
+    } 
+    //--> 
+</SCRIPT> 
+	    <h2 style="background-color:#7FFF00";>菜单<select onchange=mbar(this) name="select">
 
 		    <option value ="https://wwww.shop.2b2t.org">2B2T</option>
 
