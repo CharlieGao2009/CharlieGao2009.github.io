@@ -56,6 +56,19 @@
 		}
 	</style>
 	<body>
+		 <SCRIPT language=javascript> 
+    <!-- 
+    // open the related site windows 
+    function mbar(sobj) { 
+    var docurl =sobj.options[sobj.selectedIndex].value; 
+        if (docurl != "") { 
+            open(docurl,'_blank'); 
+            sobj.selectedIndex=0; 
+            sobj.blur(); 
+        } 
+    } 
+    //--> 
+</SCRIPT> 
 		<h2>菜单
 			<select onchange=mbar(this) name="select">
 				<OPTION selected>=== CN ===</OPTION> 
