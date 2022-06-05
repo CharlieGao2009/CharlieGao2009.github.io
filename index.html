@@ -56,19 +56,18 @@
 		}
 	</style>
 	<body>
-		 <SCRIPT language=javascript> 
-    <!-- 
-    // open the related site windows 
-    function mbar(sobj) { 
-    var docurl =sobj.options[sobj.selectedIndex].value; 
-        if (docurl != "") { 
-            open(docurl,'_blank'); 
-            sobj.selectedIndex=0; 
-            sobj.blur(); 
-        } 
-    } 
-    //--> 
-</SCRIPT> 
+		<script language=javascript>
+			function mbar(sobj)
+			{ 
+				var docurl=sobj.options[sobj.selectedIndex].value;
+				if (docurl!= "")
+				{
+					open(docurl,'_blank'); 
+					sobj.selectedIndex=0; 
+					sobj.blur(); 
+				}
+			}
+		</script>
 		<h2>菜单
 			<select onchange=mbar(this) name="select">
 				<OPTION selected>=== CN ===</OPTION> 
@@ -80,15 +79,15 @@
 		<img src="assets/img/title.png">
 		<div class="sidebar">
 			<a style="color:rgb(186,253,138);font-weight:bolder;"href="menu"><h3 align="center">菜单 | Menu</h3></a>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">CoderCharlie的博客</a></p></li>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Adam1119的博客</a></p></li>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Useful links</a></p></li>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">重要文件</a></p></li>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">!MC!</a></p></li>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">JOKES</a></p></li>
+			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">CoderCharlie的博客</a></li></p>
+			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Adam1119的博客</a></li></p>
+			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Useful links</a></li></p>
+			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">重要文件</a></li></p>
+			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">!MC!</a></li></p>
+			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">JOKES</a></li></p>
 		</div>
 		<div class="footer">
-			<p>Copyright©CoderCharlie & Adam1119(2021~2022)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+			<p>&emsp;&emsp;Copyright©CoderCharlie & Adam1119(2021~2022)</p>
 		</div>
 	</body>
 </html>
