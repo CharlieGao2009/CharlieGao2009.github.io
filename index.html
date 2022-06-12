@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<meta content="text/html" charset="UTF-8">
-	    <meta http-equiv="refresh" content="30">
+		<meta http-equiv="refresh" content="30">
 		<script>
 			var title="Main page | CharlieGao2009 and Adam1119's net";
 			var cnt=1;
@@ -13,7 +12,7 @@
 			window.onfocus=function()
 			{
 				cnt=1;
-				document.title='😉你 被 骗 了 (doge)';
+				document.title='Never gonna give you up( •̀ ω •́ )y';
 				var t=setTimeout("upt_title()",2000);
 			};
 			window.onblur=function()
@@ -21,10 +20,30 @@
 				cnt=0;
 				document.title='吾王HIM在此，快回来膜拜！！！';
 			};
+			function mbar(sobj)
+			{
+				var docurl=sobj.options[sobj.selectedIndex].value;
+				if (docurl!="")
+				{
+					open(docurl,'_blank');
+					sobj.selectedIndex=0;
+					sobj.blur();
+				}
+			}
 		</script>
-	    <title>Main page | CharlieGao2009 and Adam1119's net</title>
-    </head>
+		<title>Main page | CharlieGao2009 and Adam1119's net</title>
+	</head>
 	<style>
+		.header
+		{
+			position:fixed;
+			width:100%;
+			height:64px;
+			top:0%;
+			left:0%;
+			background-image:url(assets/img/header.png);
+			color:rgb(120,235,255);
+		}
 		.sidebar
 		{
 			width:250px;
@@ -49,58 +68,65 @@
 			font-family:consolas;
 			font-weight:bold;
 		}
-		</style>
+	</style>
 	<style type="text/css">
 		body
 		{
 			background-image:url(assets/img/background.png);
-			background-repeat:no-repeat;
 		}
 	</style>
 	<body>
-		<script language=javascript>
-			function mbar(sobj)
-			{
-				var docurl=sobj.options[sobj.selectedIndex].value;
-				if (docurl!="")
-				{
-					open(docurl,'_blank');
-					sobj.selectedIndex=0;
-					sobj.blur();
-				}
-			}
-		</script>
-		<h2>菜单
-			<select onchange=mbar(this) name="select">
-				<option selected>=== CN ===</option>
-				<option value="https://www.shop.2b2t.org">2B2T</option>
-				<option value="https://www.baidu.com">百度</option>
-				<option value="https://www.un.org/">联合国</option>
-			</select>
-		</h2>
+		<div class="header">
+			<p style="font-size:20px;font-weight:bold;font-family:楷体;">
+				&emsp;跳转到……
+				<select onchange=mbar(this) name="select" style="font-size:30px;font-weight:bold;font-family:华文新魏;">
+					<option style="font-size:30px;font-weight:bold;"selected>主站</option>
+					<option style="font-size:30px;font-weight:bold;"value="menu">菜单</option>
+				</select>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				<a style="color:rgb(120,235,255);"href="">ABOUT</a>
+				 | 
+				<a style="color:rgb(120,235,255);"href="">鸣谢</a>
+			</p>
+		</div>
+		<br/><br/>
+		<br/><br/>
 		<img src="assets/img/title.png">
 		<div class="sidebar">
 			<a style="color:rgb(186,253,138);font-weight:bolder;"href="menu"><h3 align="center">菜单 | Menu</h3></a>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">CoderCharlie的博客</a></li></p>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Adam1119的博客</a></li></p>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Useful links</a></li></p>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">重要文件</a></li></p>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">!MC!</a></li></p>
-			<p><li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">JOKES</a></li></p>
+			<p>
+				<ul style="list-style:none">
+					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">CoderCharlie的博客</a></li>
+					<br/>
+					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Adam1119的博客</a></li>
+					<br/>
+					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Useful links</a></li>
+					<br/>
+					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">重要文件</a></li>
+					<br/>
+					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">!MC!</a></li>
+					<br/>
+					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">JOKES</a></li>
+				</ul>
+			</p>
 		</div>
 		<div class="footer">
 			<p>
 				&emsp; Copyright Since 2021©CoderCharlie & Adam1119.
 				All rights reserved.
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				<a style="color:rgba(35,180,30,0.7);"href="">ABOUT</a>
-				&emsp;|&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 				<a style="color:rgba(35,180,30,0.7);"href="">F.A.Q.s</a>
 				&emsp;|&emsp;
 				<a style="color:rgba(35,180,30,0.7);"href="">声明</a>
