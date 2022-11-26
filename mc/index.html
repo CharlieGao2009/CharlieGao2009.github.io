@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta content="text/html" charset="UTF-8">
+		<meta http-equiv="refresh" content="30">
+		<title>Minecraft | CharlieGao2009 and Adam1119's net</title>
+	
+	</head>
+	<script>
+			var title="Minecraft | CharlieGao2009 and Adam1119's net";
+			var cnt=1;
+			function upt_title()
+			{
+				if (cnt==1) document.title=title;
+			}
+			window.onfocus=function()
+			{
+				cnt=1;
+				document.title='Never gonna give you up( •̀ ω •́ )y';
+				var t=setTimeout("upt_title()",2000);
+			};
+			window.onblur=function()
+			{
+				cnt=0;
+				document.title='Minecraft2.0更新力！！！';
+			};
+			function GOTO(obj)
+			{
+				var url=obj.options[obj.selectedIndex].value;
+				if (url!="")
+				{
+					open(url,'_blank');
+					obj.selectedIndex=0;
+					obj.blur();
+				}
+			}
+		</script>
+	<style>
+		.footer
+		{
+			position:fixed;
+			width:100%;
+			height:55px;
+			left:0px;
+			bottom:0px;
+			z-index:9999;
+			font-size:medium;
+			font-weight:bold;
+			color:rgba(35,180,30,0.7);
+			background-color:#add8e6c0;
+		}
+	</style>
+	<style type="text/css">
+		body
+		{
+			background-image:url(assets/img/background.png);
+		}
+	</style>
+	<body>
+		<span style="font-family:segoeui;font-size:114;text-align:center;">Minecraft</span>
+		<div class="footer">
+			<p style="font-family:segoeui;text-align:center;">
+				Copyright Since 2021©CoderCharlie & Adam1119.
+				All rights reserved.
+				&emsp;&emsp;&emsp;&emsp;
+				<a style="color:rgba(35,180,30,0.7);"href="">F.A.Q.s</a>
+				&emsp;|&emsp;
+				<a style="color:rgba(35,180,30,0.7);"href="">声明</a>
+				&emsp;|&emsp;
+				<a style="color:rgba(35,180,30,0.7);"href="">Donate us!</a>
+			</p>
+		</div>
+	</body>
+</html>
