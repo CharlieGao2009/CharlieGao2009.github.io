@@ -1,156 +1,303 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 	<head>
-		<meta content="text/html" charset="UTF-8">
-		<meta http-equiv="refresh" content="30">
-		<script>
-			var title="Main page | CharlieGao2009 and Adam1119's net";
-			var cnt=1;
-			function upt_title()
-			{
-				if (cnt==1) document.title=title;
-			}
-			window.onfocus=function()
-			{
-				cnt=1;
-				document.title='Never gonna give you up( •̀ ω •́ )y';
-				var t=setTimeout("upt_title()",2000);
-			};
-			window.onblur=function()
-			{
-				cnt=0;
-				document.title='吾王HIM在此，快回来膜拜！！！';
-			};
-			function mbar(sobj)
-			{
-				var docurl=sobj.options[sobj.selectedIndex].value;
-				if (docurl!="")
-				{
-					open(docurl,'_blank');
-					sobj.selectedIndex=0;
-					sobj.blur();
-				}
-			}
-		</script>
-		<title>Main page | CharlieGao2009 and Adam1119's net</title>
-	</head>
-	<style>
-		.header
-		{
-			position:fixed;
-			width:100%;
-			height:64px;
-			top:0%;
-			left:0%;
-			background-image:url(assets/img/header.png);
-			color:rgb(120,235,255);
-		}
-		.sidebar
-		{
-			width:250px;
-			height:450px;
-			background-image:url(assets/img/menu.png);
-			position:absolute;
-			top:100px;
-			left:75%;
-			font-size:20px;
-		}
-		.footer
-		{
-			position:fixed;
-			left:0px;
-			bottom:0px;
-			width:100%;
-			height:55px;
-			z-index:9999;
-			background-color:#add8e6c0;
-			font-size:medium;
-			color:rgba(35,180,30,0.7);
-			font-family:consolas;
-			font-weight:bold;
-		}
-		.button{
-		width: 200px;
-		height: 30px;
-		color:white;
-		background-color:cornflowerblue;
-		border-radius: 3px;
-		border-width: 0;
-		margin: 0;
-		outline: none;
-		font-family: KaiTi;
-		font-size: 17px;
-		text-align: center;
-		cursor: pointer;
-		}
-		.button:hover{
-		background-color: antiquewhite;
-		}
-</style>
-	<style type="text/css">
-		body
-		{
-			background-image:url(assets/img/background.png);
-		}
-	</style>
-	<body>
-		<div class="header">
-			<p style="font-size:20px;font-weight:bold;font-family:楷体;">
-				&emsp;跳转到……
-				<select onchange=mbar(this) name="select" style="font-size:30px;font-weight:bold;font-family:华文新魏;">
-					<option style="font-size:30px;font-weight:bold;"selected>主站</option>
-					<option style="font-size:30px;font-weight:bold;"value="menu">菜单</option>
-				</select>
-				<button class="button"><a href="https://www.shop.2b2t.org/">GO 2B2T！</a></button>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				<a style="color:rgb(120,235,255);"href="">鸣谢</a>
-			</p>
+		<meta charset="utf-8">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="force-rendering" content="webkit" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#424242" />
+		<meta name="description" content="EXCFS">
+		<meta name="keywords" content="EXCFS">
+		<meta name="author" content="CZOIers">
 
-			
+		<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js"></script>
+		<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>if (false||(!!window.MSInputMethodContext&&!!document.documentMode)) window.location.href="/upgrade-your-browser/index.html?referrer="+encodeURIComponent(window.location.href);</script>
+		<script src="assets/js/51LA.js"></script>
+
+		<link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css">
+		<link rel="stylesheet" type="text/css" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile.css">
+		<link rel="stylesheet" type="text/css" href="css/loading.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
+		<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+		<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/aplayer/1.10.1/APlayer.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+		<link rel="manifest" href="assets/json/manifest.json">
+		<link rel="apple-touch-icon" href="assets/img/icon/apple-touch-icon.png">
+
+		<title>Main Page | CoderCharlie and Adam1119's Website</title>
+	</head>
+	<body>
+		<!-- 加载动画 -->
+		<div id="loading-box">
+			<div class="loading-left-bg"></div>
+			<div class="loading-right-bg"></div>
+			<div class="spinner-box">
+				<div class="loader">
+					<div class="inner one"></div>
+					<div class="inner two"></div>
+					<div class="inner three"></div>
+				</div>
+				<div class="loading-word">
+					<p class="loading-title" id="loading-title">CoderCharlie and Adam1119's Website</p>
+					<span id="loading-text">Loading</span>
+				</div>
+			</div>
 		</div>
-		<br/><br/>
-		<br/><br/>
-		<img src="assets/img/title.png">
-		<div class="sidebar">
-			<a style="color:rgb(186,253,138);font-weight:bolder;"href="menu"><h3 align="center">菜单 | Menu</h3></a>
-			<p>
-				<ul style="list-style:none">
-					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">CoderCharlie的博客</a></li>
-					<br/>
-					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Adam1119的博客</a></li>
-					<br/>
-					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">Useful links</a></li>
-					<br/>
-					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">重要文件</a></li>
-					<br/>
-					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="mc">!MC!</a></li>
-					<br/>
-					<li style="color:rgb(255,255,68);"><a style="color:rgb(255,255,68);font-weight:bolder;"href="">JOKES</a></li>
-				</ul>
-			</p>
-		</div>
-		<div class="footer">
-			<p>
-				&emsp; Copyright Since 2021©CoderCharlie & A<br/>dam1119.
-				All rights reserved.
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				&emsp;&emsp;
-				<a style="color:rgba(35,180,30,0.7);"href="">F.A.Q.s</a>
-				&emsp;|&emsp;
-				<a style="color:rgba(35,180,30,0.7);"href="">声明</a>
-				&emsp;|&emsp;
-				<a style="color:rgba(35,180,30,0.7);"href="">Donate us!</a>
-				&emsp;|&emsp;
-				<a style="color:rgba(35,180,30,0.7);"href="saygoodbye">Say goodbye</a>
-			</p>
-		</div>
+
+		<section id="section" class="section">
+			<!-- 背景图片 -->
+			<div class="bg-all">
+				<img id="bg" onerror="this.classList.add('error');"></img>
+				<div class="cover"></div>
+			</div>
+			<!-- 鼠标指针 -->
+			<div id="g-pointer-1"></div>
+			<div id="g-pointer-2"></div>
+			<!-- Everything -->
+			<main id="main" class="main">
+				<div class="container" id="container">
+					<div class="row" id="row">
+						<!--Left-->
+						<div class="col left">
+							<!--基本信息-->
+							<div class="main-left">
+								<!--Logo-->
+								<div class="main-img">
+									<div class="img-title">
+										<span class="img-title-big" id="logo-text-1">GCH & LYH</span>
+									</div>
+								</div>
+								<!--介绍信息-->
+								<div class="message cards" id="switchmore">
+									<div class="des" id="des">
+										<i class="fa-solid fa-quote-left"></i>
+											<div class="des-title">
+												<span id="change">CoderCharlie and Adam1119's Website</span>
+												<br />
+												<span id="change1">一个默默无闻的小站</span>
+											</div>
+										<i class="fa-solid fa-quote-right"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Right-->
+						<div class="logo cards" style="display: none" id="changemore">
+							<a class="logo-text" id="logo-text-small">CoderCharlie and Adam1119's Website</a>
+						</div>
+						<div class="col right">
+							<div class="main-right">
+								<!--功能区-->
+								<div class="row rightone" id="rightone">
+									<div class="col times">
+										<!--时间-->
+										<div class="time cards" id="upWeather">
+											<div class="timeshow" id="time">
+												2000&nbsp;年&nbsp;0&nbsp;月&nbsp;00&nbsp;日&nbsp;
+												<span class="weekday">星期一</span><br><span class="time-text">00:00:00</span>
+											</div>
+											<div class="weather">
+												<iframe width="300" height="30" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=34&py=changzhou&icon=1"></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--分隔线-->
+								<div class="line">
+									<i class="fa-solid fa-link"></i>
+									<span class="line-text">功能区</span>
+								</div>
+								<!--网站链接-->
+								<div class="link">
+									<!--第一组-->
+									<div class="row">
+										<div class="col">
+											<!-- N -->
+											<a id="link-url-1" href="sol" target="_blank">
+												<div class="link-card cards">
+													<!-- <i id="link-icon-1" class="fa-solid fa-blog"></i> -->
+													<span class="link-name" id="link-name-1">1</span>
+												</div>
+											</a>
+										</div>
+										<div class="col 2">
+											<!-- N -->
+											<a id="link-url-2" href="bbs" target="_blank">
+												<div class="link-card cards">
+													<!-- <i id="link-icon-2" class="fa-solid fa-cloud"></i> -->
+													<span class="link-name" id="link-name-2">2</span>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<!-- N -->
+											<a id="link-url-3" href="http://61.177.80.215" target="_blank">
+												<div class="link-card cards">
+													<!-- <i id="link-icon-3" class="fa-solid fa-music"></i> -->
+													<span class="link-name" id="link-name-3">3</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<!--第二组-->
+									<div class="row" style="margin-top: 1.5rem;">
+										<div class="col">
+											<!-- N -->
+											<a id="link-url-4" href="tools" target="_blank">
+												<div class="link-card cards">
+													<!-- <i id="link-icon-4" class="fa-solid fa-compass"></i> -->
+													<span class="link-name" id="link-name-4">OI Tools</span>
+												</div>
+											</a>
+										</div>
+										<div class="col 2">
+											<!-- N -->
+											<a id="link-url-5" href="faqs" target="_blank">
+												<div class="link-card cards">
+													<!-- <i id="link-icon-5" class="fa-solid fa-book-bookmark"></i> -->
+													<span class="link-name" id="link-name-5">F.A.Qs</span>
+												</div>
+											</a>
+										</div>
+										<div class="col">
+											<a id="openmore">
+												<div class="link-card cards">
+													<span class="link-name">ABOUT</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--展开菜单按钮-->
+					<div class="menu" id="switchmenu">
+						<a class="munu-button cards" id="menu">
+							<i class="fa-solid fa-bars"></i>
+						</a>
+					</div>
+					<!--更多内容-->
+					<div class="more" id="more">
+						<!--关闭按钮-->
+						<div class="close fixed-top" id="close">
+							<i class="fa-solid fa-circle-xmark"></i>
+						</div>
+						<div class="line" style="margin-top: 1rem;">
+							<i class="fa-solid fa-angle-left"></i>
+							<span class="line-text">时间胶囊</span>
+							<i class="fa-solid fa-angle-right"></i>
+						</div>
+						<div class="date" id="date">
+							<div class="item" id="dayProgress">
+								<div class="date-text" style="margin-top: 0rem;">今日已经度过了&nbsp;<span></span>&nbsp;小时</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+							<div class="item" id="weekProgress">
+								<div class="date-text">本周已经度过了&nbsp;<span></span>&nbsp;天</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+							<div class="item" id="monthProgress">
+								<div class="date-text">本月已经度过了&nbsp;<span></span>&nbsp;天</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+							<div class="item" id="yearProgress">
+								<div class="date-text">今年已经度过了&nbsp;<span></span>&nbsp;个月</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</div>
+						</div>
+						<div class="line">
+							<i class="fa-solid fa-angle-left"></i>
+							<span class="line-text">Upcoming Events</span>
+							<i class="fa-solid fa-angle-right"></i>
+						</div>
+					</div>
+					<!--更多页面-->
+					<div class="box" id="box" style="display: none">
+						<div class="box-wrapper">
+							<!--关闭按钮-->
+							<div class="closebox fixed-top" id="closemore">
+								<i class="fa-solid fa-circle-xmark"></i>
+							</div>
+							<!--左侧内容-->
+							<div class="box-left">
+								<div class="img-title">
+									<span class="img-title-big" id="logo-title-other">GCH & LYH's</span>
+									&emsp;
+									<span class="img-text" id="logo-title-other-small">Website</span><br />
+									<span class="img-text">&nbsp;v&nbsp;0.1</span>
+								</div>
+								<!--更多内容-->
+								<div class="accordion" id="accordion">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												关于
+											</button>
+										</h2>
+										&emsp; This is a website made belong to GCH and LYH.
+									</div>
+								</div>
+							</div>
+							<div class="box-right">
+								<span id="power">
+									<h2 style="text-align: centre;">更新日志</h2>
+									<br/>
+									<i class="fa-solid fa-circle-plus"></i>&nbsp;2022/12/10 Alpha 0.6 GCH对此网站进行大改。
+									<br/><br/><br/><br/>
+									Copyright&nbsp;&copy;
+									<script>document.write((new Date()).getFullYear());</script>
+									CoderCharlie & Adam1119
+
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- 版权信息 -->
+			<footer id="footer" class="fixed-bottom footer">
+				<div class="power">
+					<span id="power">
+						Copyright&nbsp;&copy;
+						<script>document.write((new Date()).getFullYear());</script>
+						CZOIers &amp; Q老师
+					</span>
+					&emsp;|&emsp;
+					<span id="made">
+						Theme&nbsp;by&nbsp;
+						<a href="https://github.com/imsyy/home" target="_blank">imsyy</a>
+					</span>
+					&emsp;|&emsp;
+					Modified by <a href="https://github.com/charliegao2009">GCH</a>
+					&emsp;|&emsp;
+					<a href="record-filing" id="beian" target="_blank">网站备案</a>
+					&emsp;|&emsp;
+					<a href="donate" id="beian" target="_blank" style="font-family: Pacifico-Regular;">Donate us!</a>
+				</div>
+			</footer>
+		</section>
+
+		<script>if ("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("assets/js/sw.js");});}</script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="assets/js/set.js"></script>
+		<script type="text/javascript" src="assets/js/time.js"></script>
+		<script type="text/javascript" src="assets/js/js.cookie.js"></script>
+		<script type="text/javascript" src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/js/bootstrap.min.js"></script>
 	</body>
 </html>
