@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: 'Welcome to Extended-CFSOI'
+            message: 'Welcome to CoderCharlie and Adam1119 Website'
         });
     }, 800);
     //移动端去除鼠标样式
@@ -210,7 +210,7 @@ $('#switchmore').on('click', function () {
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Extended-CFSOI");
-        $("#change1").html("一个为常外OIers设计的网站<br/>一个建立于 21 世纪的小站，存活于互联网的边缘");
+        $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
     }
 });
 
@@ -301,14 +301,14 @@ color: rgb(244,167,89);
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = 'Extended-CFSOI'
+let title1 = 'GCH'
 let title2 = `
 不要忘记开long long
 不要写错freopen                                                                              
 `
 let content = `
-版 本 号：0.1a
-更新日期：2022-12-10
+版 本 号：0.6a
+更新日期：2023-5-3
 
 Made by GCH
 Github:  https://github.com/extended-cfsoi/extended-cfsoi.github.io
